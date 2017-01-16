@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.imperium.autobeacon.SpeedReckless">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpeedRecklessImg"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/reckless_symbol"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed &amp; Reckless Driving"
+        android:id="@+id/tvSpeedReckless"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/SpeedRecklessImg"
+        android:layout_alignBottom="@id/SpeedRecklessImg"
+        android:textSize="25sp"
+        android:paddingLeft="16dp"
+        />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sSpeedRestriction"
+        android:layout_below="@id/tvSpeedReckless"
+        android:padding="@dimen/activity_vertical_margin"
+
+        android:text="Would you like to place a restriction  on speed?"
+        android:checked="false" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sSpeedRestriction"
+        android:text="Option to increase / decrease the speed"
+        android:id="@+id/bSpeedControl"
+        android:textColor="#000000"
+        android:padding="@dimen/activity_vertical_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the maximum speed that  this vehicle can be driven by John?"
+        android:id="@+id/textView8"
+        android:textColor="#000000"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/bSpeedControl"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="#000000"
+        android:id="@+id/add"
+        android:layout_below="@id/textView8"
+        android:layout_alignTop="@+id/subtract"
+        android:layout_centerInParent="true"
+
+        android:textSize="@dimen/abc_action_bar_content_inset_material" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#000000"
+        android:id="@+id/subtract"
+
+        android:layout_toEndOf="@id/add"
+        android:layout_below="@id/textView8"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/abc_action_bar_content_inset_material" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Speed Limit"
+        android:id="@+id/display"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/textView8"
+        android:padding="@dimen/activity_vertical_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Current Speed"
+        android:id="@+id/speed"
+        android:layout_below="@+id/subtract"
+        android:padding="@dimen/activity_vertical_margin"
+         />
+
+
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sMaxSpeedLimit"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_below="@id/speed"
+
+        android:text="Please send me Real-Time notifications of this speed restriction is violated"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RegisterDriver"
+    android:layout_below="@id/tabLayout"
+    android:layout_alignParentBottom="true"
+    android:clickable="true"
+    android:background="?android:attr/colorBackground"
+
+    tools:context="com.imperium.autobeacon.RegisterDriver"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Driver Registration"
+            android:id="@+id/tvUserReg"
+            android:textColor="#0000FF" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLastNameDriverReg"
+            android:hint="Last Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFirstNameDriverReg"
+            android:hint="First Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDriverIDDriverReg"
+            android:hint="Driver ID"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/etPwdDriverReg"
+            android:hint="Age"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/etRePwdDriverReg"
+            android:hint="Gender"
+            android:fontFamily="sans-serif"
+
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Driver Restrictions"
+            android:id="@+id/bCreateRestriction"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temporary Driver Restrictions"
+            android:id="@+id/bTempRestrict"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

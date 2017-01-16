@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.imperium.autobeacon.RegisterActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoimg"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:maxHeight="180dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/auto"
+        android:paddingBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/tvRegister"
+        android:layout_below="@+id/autoimg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#0000FF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLastName"
+        android:layout_below="@+id/tvRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Last Name (Adult)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etFirstName"
+        android:layout_below="@+id/etLastName"
+        android:layout_alignParentStart="true"
+        android:hint="First Name (Adult)"
+        android:layout_alignEnd="@+id/etLastName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDriverID"
+        android:layout_below="@+id/etFirstName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Driver ID (Adult)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPwdAdult"
+        android:layout_below="@+id/etDriverID"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etDriverID"
+        android:hint="Password (Adult)"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etRePwdAdult"
+        android:layout_below="@+id/etPwdAdult"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etPwdAdult"
+        android:hint="Repeat Password (Adult)"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEMail"
+        android:layout_below="@+id/etRePwdAdult"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etRePwdAdult"
+        android:hint="Email Address (Adult)" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/bReg_2"
+        android:layout_below="@+id/etEMail"
+        android:layout_alignEnd="@+id/etEMail" />
+
+</RelativeLayout>

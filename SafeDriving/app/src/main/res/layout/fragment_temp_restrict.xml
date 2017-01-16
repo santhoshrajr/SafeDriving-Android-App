@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="?android:attr/colorBackground"
+
+    tools:context="com.imperium.autobeacon.TempRestrict">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTempTextview"
+            android:text="Temporary_Restriction_!!!!fragment"
+            android:layout_marginTop = "120dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curfew Settings"
+            android:id="@+id/bCurfewSettings"
+            android:layout_below="@+id/tvTempTextview"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/bLocationSettings" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Settings"
+            android:id="@+id/bLocationSettings"
+            android:layout_below="@+id/bCurfewSettings"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed Monitoring"
+            android:id="@+id/bSpeedMonitoring"
+            android:layout_below="@+id/bLocationSettings"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/bBreathalyzer" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breathalyzer"
+            android:id="@+id/bBreathalyzer"
+            android:layout_below="@+id/bSpeedMonitoring"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/bLocationSettings" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passengers"
+            android:id="@+id/bPassengers"
+            android:layout_below="@+id/bBreathalyzer"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/bLocationSettings" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CellPhone"
+            android:id="@+id/bCellPhone"
+            android:layout_below="@+id/bPassengers"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/bLocationSettings"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SeatBelt"
+            android:id="@+id/bSeatBelt"
+            android:layout_below="@+id/bCellPhone"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/bLocationSettings"
+            />
+
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Location Settings"-->
+        <!--android:id="@+id/bLoc_Settings"-->
+        <!--android:textStyle="bold"-->
+
+        <!--android:layout_below="@id/tvTempTextview"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Speed Reckless"-->
+        <!--android:id="@+id/bSpeeding_settings"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@id/bLoc_Settings"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Curfew Settings"-->
+        <!--android:id="@+id/bCurfew_settings"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@id/bSpeeding_settings"-->
+<!--/>-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Brethalyzer Settings"-->
+        <!--android:id="@+id/bBreath_settings"-->
+        <!--android:layout_below="@id/bCurfew_settings"-->
+        <!--android:layout_alignStart="@+id/bCurfew_settings" />-->
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.imperium.autobeacon.PassengersActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passengerimg"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cellphone_symbol"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passengers"
+        android:id="@+id/tvPassengers"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/passengerimg"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        />
+
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sUnderagePassengers"
+        android:layout_below="@id/passengerimg"
+        android:padding="@dimen/activity_vertical_margin"
+
+        android:text="Are underage passengers allowed in the vehicle with John? "
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If yes, how many passengers are permitted?"
+        android:id="@+id/tvPassengerLimit"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/sUnderagePassengers"
+        android:textColor="#000000"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/addPassenger"
+        android:layout_below="@id/tvPassengerLimit"
+        android:layout_alignTop="@+id/subtractPassenger"
+        android:layout_centerInParent="true"
+
+        android:textSize="@dimen/abc_action_bar_content_inset_material" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/subtractPassenger"
+
+        android:layout_toEndOf="@id/addPassenger"
+        android:layout_below="@id/tvPassengerLimit"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/abc_action_bar_content_inset_material" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passenger Limit"
+        android:id="@+id/displayPassenger"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvPassengerLimit"
+        android:layout_toRightOf="@id/subtractPassenger"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textColor="#000000"
+        />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sPassengerNotif"
+        android:layout_below="@id/addPassenger"
+        android:padding="@dimen/activity_vertical_margin"
+
+        android:text="Please send me real-time notifications if there are more than the authorized number of passengers in the car"
+
+        />
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sPassengerIgnition"
+        android:layout_below="@id/sPassengerNotif"
+        android:padding="@dimen/activity_vertical_margin"
+
+        android:text="Ignition interlock with non-compliance?"
+
+        />
+
+</RelativeLayout>

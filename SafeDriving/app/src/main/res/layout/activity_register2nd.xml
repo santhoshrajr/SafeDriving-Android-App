@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.imperium.autobeacon.Register2ndActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/tvRegister"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0000FF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etStreetAdr"
+        android:layout_below="@+id/tvRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Street Address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCity"
+        android:layout_below="@+id/etStreetAdr"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="City" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etState"
+        android:layout_below="@+id/etCity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="State" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDeviceSerial"
+        android:layout_below="@+id/etCity"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Zip Code" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSerialNumber"
+        android:layout_below="@+id/etState"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Device Serial Number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLeaseID"
+        android:layout_below="@+id/etSerialNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Lease ID"
+        android:paddingBottom="25dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Details"
+        android:layout_below="@+id/etLeaseID"
+        android:id="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:textColor="#0000FF"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:layout_below="@+id/textView17"
+        android:id="@+id/textView14"
+        android:layout_alignParentStart="true"
+
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/year"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/year"
+        android:layout_alignParentStart="true"
+
+        />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/make"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/make"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/model"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/bContinue"
+        android:onClick="DiscContinue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/model" />
+
+</RelativeLayout>

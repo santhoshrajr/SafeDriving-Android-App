@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.imperium.autobeacon.SeatBeltActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seatbeltimg"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/seatbelt_symbol"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat-Belt Usage"
+        android:id="@+id/tVSeatBelt"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/seatbeltimg"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sPermissionForSeatBeltUse"
+        android:layout_below="@id/seatbeltimg"
+        android:padding="@dimen/activity_vertical_margin"
+
+        android:text="Is John allowed to use his/her seat belt while driving this vehicle? "
+
+        />
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are Passengers required to use their seat belts while restricted driver is driving?"
+        android:id="@+id/tVPassengerSeatBelt"
+        android:layout_below="@id/sPermissionForSeatBeltUse"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/activity_vertical_margin"
+        />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to receive real-time notifications when John and/or his/her passengers are not using their seat belts?"
+        android:id="@+id/tVSeatBeltNotif"
+        android:layout_below="@id/tVPassengerSeatBelt"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/activity_vertical_margin"
+        />
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ignition interlock with non-compliance?"
+        android:id="@+id/textView5"
+        android:layout_below="@id/tVSeatBeltNotif"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/activity_vertical_margin"
+        />
+
+</RelativeLayout>
